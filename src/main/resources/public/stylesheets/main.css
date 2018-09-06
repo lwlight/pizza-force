@@ -11,6 +11,11 @@
     padding-bottom: 80px;
 }
 
+.pf-bottom {
+    min-height: 100px;
+    background-color: dimgrey;
+}
+
 .white {
     color: white !important;
 }
