@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    filter: brightness(70%);
     width: 100% ;
     min-height: 400px;
     color: white;
@@ -11,8 +12,7 @@
 }
 
 .white {
-    color: white;
-    filter: brightness(70%);
+    color: white !important;
 }
 
 .jumbotron .btn-primary {
