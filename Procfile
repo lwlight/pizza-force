@@ -1,0 +1,1 @@
+web: java -jar target/pizza-force-1.0.jar
