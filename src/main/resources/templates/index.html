@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title>Pizza Force order page</title>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css"/>
 </head>
 
 <body>
@@ -25,45 +25,47 @@
     <!--  ----------------------------------------------------------------------  -->
     <!--  NOTE: Please add the following <FORM> element to your page.             -->
     <!--  ----------------------------------------------------------------------  -->
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+            <input type=hidden name="orgid" value="00D6F000002T87k">
+            <input type=hidden name="retURL" value="https://pizza-force.herokuapp.com/">
 
-        <input type=hidden name="orgid" value="00D6F000002T87k">
-        <input type=hidden name="retURL" value="https://pizza-force.herokuapp.com/">
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail"                                  -->
+            <!--  value="pizzaforcefinal@gmail.com">                                      -->
+            <!--  ----------------------------------------------------------------------  -->
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input class="form-control" id="name" maxlength="80" name="name" size="20" type="text"
+                       placeholder="John Snow"/><br>
+            </div>
 
-        <!--  ----------------------------------------------------------------------  -->
-        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-        <!--  these lines if you wish to test in debug mode.                          -->
-        <!--  <input type="hidden" name="debug" value=1>                              -->
-        <!--  <input type="hidden" name="debugEmail"                                  -->
-        <!--  value="pizzaforcefinal@gmail.com">                                      -->
-        <!--  ----------------------------------------------------------------------  -->
-        <div class="form-group">
-            <label for="name">Name: </label>
-            <input class="form-control" id="name" maxlength="80" name="name" size="20" type="text"
-                   placeholder="John Snow"/><br>
-        </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input class="form-control" id="email" maxlength="80" name="email" size="20" type="text"
+                       placeholder="john_snow@gmail.com"/><br>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone: </label>
+                <input class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text"
+                       placeholder="+375291234567"/><br>
+            </div>
+            <input id="subject" maxlength="80" name="subject" size="20" type="hidden"
+                   value="Order from pizza-force.herokuapp.com"/><br>
 
-        <div class="form-group">
-            <label for="email">Email: </label>
-            <input class="form-control" id="email" maxlength="80" name="email" size="20" type="text"
-                   placeholder="john_snow@gmail.com"/><br>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone: </label>
-            <input class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text"
-                   placeholder="+375291234567"/><br>
-        </div>
-        <input id="subject" maxlength="80" name="subject" size="20" type="hidden"
-               value="Order from pizza-force.herokuapp.com"/><br>
-
-        <div class="form-group">
-            <label for="description">Description: </label>
-            <textarea class="form-control" name="description"></textarea><br>
-        </div>
-        <input type="submit" class="btn btn-primary" name="submit">
-
-    </form>
+            <div class="form-group">
+                <label for="description">Description: </label>
+                <textarea class="form-control" name="description"></textarea><br>
+            </div>
+            <input type="submit" class="btn btn-primary" name="submit">
+        </form>
+    </div>
+    <div class="col-md-2"></div>
 
 </div>
 
