@@ -1,6 +1,6 @@
 .jumbotron {
     /*background: #532F8C;*/
-    background-image: url("../../public/img/pf-bg.jpg");
+    background-image: url("/img/pf-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
