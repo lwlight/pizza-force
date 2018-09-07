@@ -1,14 +1,10 @@
 .jumbotron {
     color: white;
     min-height: 350px;
-}
-
-.main-bg {
     background-image: url("/img/pf-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    filter: brightness(70%);
     width: 100% ;
 }
 
