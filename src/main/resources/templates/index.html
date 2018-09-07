@@ -14,67 +14,51 @@
     </div>
 </div>
 <div class="container">
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-    <!--  If necessary, please modify the charset parameter to specify the        -->
-    <!--  character set of your HTML page.                                        -->
-    <!--  ----------------------------------------------------------------------  -->
-
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <FORM> element to your page.             -->
-    <!--  ----------------------------------------------------------------------  -->
     <div class="col-md-2"></div>
     <div class="col-md-8">
         <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
             <input type=hidden name="orgid" value="00D6F000002T87k">
             <input type=hidden name="retURL" value="https://pizza-force.herokuapp.com/">
+            <input type="hidden" id="subject" maxlength="80" name="subject" size="20" value="Order from pizza-force.herokuapp.com"/><br>
 
-            <!--  ----------------------------------------------------------------------  -->
-            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-            <!--  these lines if you wish to test in debug mode.                          -->
-            <!--  <input type="hidden" name="debug" value=1>                              -->
-            <!--  <input type="hidden" name="debugEmail"                                  -->
-            <!--  value="pizzaforcefinal@gmail.com">                                      -->
-            <!--  ----------------------------------------------------------------------  -->
             <div class="form-group">
                 <label for="name">Name: </label>
                 <input class="form-control" id="name" maxlength="80" name="name" size="20" type="text"
-                       placeholder="John Snow"/><br>
+                       placeholder="John Snow"/>
             </div>
 
             <div class="form-group">
                 <label for="email">Email: </label>
                 <input class="form-control" id="email" maxlength="80" name="email" size="20" type="text"
-                       placeholder="john_snow@gmail.com"/><br>
+                       placeholder="john_snow@gmail.com"/>
             </div>
             <div class="form-group">
                 <label for="phone">Phone: </label>
                 <input class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text"
-                       placeholder="+375291234567"/><br>
+                       placeholder="+375291234567"/>
             </div>
-            <input id="subject" maxlength="80" name="subject" size="20" type="hidden"
-                   value="Order from pizza-force.herokuapp.com"/><br>
+
+            <div class="form-group">
+                <label for="00N6F00000OenDs">Delivery Address: </label>
+                <input id="00N6F00000OenDs" maxlength="255" name="00N6F00000OenDs" size="20" type="text" />
+            </div>
 
             <div class="form-group">
                 <label for="description">Description: </label>
-                <textarea class="form-control" name="description"></textarea><br>
+                <textarea class="form-control" name="description"></textarea>
             </div>
             <input type="submit" class="btn btn-primary" name="submit">
         </form>
     </div>
     <div class="col-md-2"></div>
 
-    <div class="pf-bottom">
-        <span>&copy;Pizza-force</span>
-    </div>
+
 </div>
-
-
-<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-<script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
-<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+<div class="pf-bottom">
+    <span>&copy;Pizza-force</span>
+</div>
 </body>
 </html>
