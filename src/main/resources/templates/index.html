@@ -10,7 +10,7 @@
 <div class="jumbotron text-center">
     <div class="main-bg">
         <div class="container">
-            <h1>Pizza Force</h1>
+            <h1 class="white">Pizza Force</h1>
             <p class="white">The toughest pizza on Salesforce!</p>
         </div>
     </div>
@@ -20,6 +20,7 @@
 
     <div class="col-md-2"></div>
     <div class="col-md-8">
+        <H2 class="align-center">Order form</H2>
         <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
             <input type=hidden name="orgid" value="00D6F000002T87k">
@@ -29,18 +30,19 @@
             <div class="form-group">
                 <label for="name">Name: </label>
                 <input class="form-control" id="name" maxlength="80" name="name" size="20" type="text"
-                       placeholder="John Snow"/>
+                       placeholder="John Snow" required="" pattern="^[A-Z][a-z]+\s[A-Z][a-z]+$"/>
             </div>
 
             <div class="form-group">
                 <label for="email">Email: </label>
                 <input class="form-control" id="email" maxlength="80" name="email" size="20" type="text"
-                       placeholder="john_snow@gmail.com"/>
+                       placeholder="john_snow@gmail.com" required=""
+                        pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/>
             </div>
             <div class="form-group">
                 <label for="phone">Phone: </label>
                 <input class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text"
-                       placeholder="+375291234567"/>
+                       placeholder="+375291234567" required=""/>
             </div>
 
             <div class="form-group">
@@ -59,14 +61,15 @@
     <div class="col-md-2"></div>
 </div>
 
-<div class="container">
-    <div class="pf-bottom">
+<div class="pf-bottom">
+    <div class="container">
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <span>&copy;Pizza-force</span>
         </div>
         <div class="col-md-2"></div>
     </div>
+
 </div>
 </body>
 </html>

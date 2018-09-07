@@ -1,5 +1,6 @@
 .jumbotron {
     color: white;
+    min-height: 350px;
 }
 
 .main-bg {
@@ -9,11 +10,14 @@
     background-size: cover;
     filter: brightness(70%);
     width: 100% ;
-    min-height: 350px;
+}
+
+.align-center {
+    text-align: center;
 }
 
 .pf-bottom {
-    padding-top: 20px;
+    padding-top: 15px;
     min-height: 50px;
     background-color: dimgrey;
     margin-top: 10px;
@@ -22,6 +26,7 @@
 }
 
 .white {
+    filter:brightness(100%) !important;
     color: white !important;
 }
 
