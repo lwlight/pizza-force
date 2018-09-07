@@ -1,17 +1,19 @@
 .jumbotron {
-    /*background: #532F8C;*/
+    color: white;
+}
+
+.main-bg {
     background-image: url("/img/pf-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     filter: brightness(70%);
     width: 100% ;
-    min-height: 400px;
-    color: white;
-    padding-bottom: 80px;
+    min-height: 350px;
 }
 
 .pf-bottom {
+    padding-top: 20px;
     min-height: 50px;
     background-color: dimgrey;
     margin-top: 10px;

@@ -8,9 +8,11 @@
 <body>
 
 <div class="jumbotron text-center">
-    <div class="container">
-        <h1>Pizza Force</h1>
-        <p class="white">The toughest pizza on Salesforce!</p>
+    <div class="main-bg">
+        <div class="container">
+            <h1>Pizza Force</h1>
+            <p class="white">The toughest pizza on Salesforce!</p>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -43,22 +45,28 @@
 
             <div class="form-group">
                 <label for="00N6F00000OenDs">Delivery Address: </label>
-                <input id="00N6F00000OenDs" maxlength="255" name="00N6F00000OenDs" size="20" type="text" />
+                <input id="00N6F00000OenDs" class="form-control" maxlength="255" name="00N6F00000OenDs" size="20" type="text" />
             </div>
 
             <div class="form-group">
                 <label for="description">Description: </label>
                 <textarea class="form-control" name="description"></textarea>
             </div>
+
             <input type="submit" class="btn btn-primary" name="submit">
         </form>
     </div>
     <div class="col-md-2"></div>
-
-
 </div>
-<div class="pf-bottom">
-    <span>&copy;Pizza-force</span>
+
+<div class="container">
+    <div class="pf-bottom">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <span>&copy;Pizza-force</span>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
 </div>
 </body>
 </html>
